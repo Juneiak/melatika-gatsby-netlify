@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+  font-size: calc(1vw / 14.4);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    /* font-size: calc(1vw / 7.68); */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: calc(1vw / 3.75);
+  }
+}
+
+:root {
+  --font-basic: 'Montserrat', sans-serif;
+  --color-white: white;
+  --color-peach: #D5876F;
+  --color-error: #87331a;
+  --color-gray: #2A2C2E;
+  --color-black: #000;
+
+  --font-size-large: 70rem;
+  --font-size-big: 40rem;
+  --font-size-middle: 24rem;
+  --font-size-small: 20rem;
+
+  --font-size-caption-big: 18rem;
+  --font-size-caption-middle: 16rem;
+  --font-size-caption-small: 14rem;
+  
+  --font-size-body-big: 12rem;
+  --font-size-body-middle: 10rem;
+  --font-size-body-small: 8rem;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', 'Oxygen', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+@keyframes openAniamtion {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes closeAniamtion {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+body::after {
+  position: absolute; height: 0; width: 0; overflow: hidden; z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  body::after {
+
+  }
+}

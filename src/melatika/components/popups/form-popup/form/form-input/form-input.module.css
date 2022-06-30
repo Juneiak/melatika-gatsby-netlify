@@ -1,0 +1,98 @@
+.label {
+  font-size: 1vw;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 330rem;
+  height: 60rem;
+  border: 1rem solid var(--color-black);;
+  background-color: transparent;
+  border-radius: 35rem;
+  padding: 3% 5%;
+  outline: none;
+  position: relative;
+  text-align: center;
+  font-family: var(--font-basic);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  color: var(--color-black);
+  margin-bottom: 15rem;
+  box-sizing: border-box;
+  transition: all 0.1s linear;
+}
+.input::placeholder {
+  color: black;
+}
+
+.input:focus {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: calc(var(--font-size-small) * 0.9);
+}
+
+.input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.7)!important;
+}
+
+.inputError {
+  border: 0.08em solid var(--color-error);
+}
+
+.errorMessage {
+  background-color: var(--color-error);
+  color: var(--color-white);
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  width: 90%;
+  padding: 2%;
+  z-index: 5;
+  box-sizing: border-box;
+  font-size: var(--font-size-caption-small);
+  font-family: var(--font-basic);
+  border-radius: 3rem;
+  border-radius: 12rem;
+  text-align: center;
+}
+
+.errorMessage::before {
+  content: '';
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  position: absolute;
+  top: -10rem;
+  right: calc(50% - 10rem);
+  background-color: var(--color-error);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 480px) {
+  .input {
+    height: 37rem;
+    width: 203rem;
+    margin-bottom: 10rem;
+    font-size: var(--font-size-body-middle);
+  }
+  .input:focus {
+    font-size: calc(var(--font-size-body-middle) * 0.9);
+  }
+
+  .errorMessage {
+    top: 95%;
+    width: 90%;
+    padding: 2%;
+    font-size: var(--font-size-body-middle);
+  }
+
+  .errorMessage::before {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: -5rem;
+    right: calc(50% - 5rem);
+  }
+  
+  
+}

@@ -1,0 +1,31 @@
+.contactsBar {
+  width: 100%;
+  padding: 16rem 0;
+  display: none;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+
+.list {
+  width: 325rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconElement {
+  width: 18rem;
+  height: 18rem;
+  color: var(--color-black);
+}
+
+.iconElement img {
+  width: 18rem;
+  height: 18rem;
+}
+
+@media screen and (max-width: 480px) {
+  .contactsBar {
+    display: flex;
+  }
+}

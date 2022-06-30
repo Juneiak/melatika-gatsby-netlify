@@ -1,0 +1,27 @@
+.header {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 22rem 0;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 563rem;
+}
+
+.listElement {
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .header {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.button {
+  width: 3.3vw;
+  height: 2.5vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.line {
+  width: 100%;
+  height: 7%;
+  background-color: var(--color-white);
+}
+
+.line1 {
+  transform-origin: 0% 0%;
+  transform: rotate(45deg);
+}
+
+.line2 {
+  transform: rotate(-45deg);
+  transform-origin: 0% 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    width: 5vw;
+    height: 3.75vw;
+  }
+  .line {
+    background-color: black;
+  }
+}

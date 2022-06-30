@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formLoading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  transition: all linear 0.25s;
+  width: 225rem;
+  height: 40rem;
+  border-radius: 35px;
+  font-family: var(--font-basic);
+  font-weight: 300;
+  font-size: var(--font-size-caption-middle);
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease-out;
+  border: 1rem var(--color-peach) solid;
+  background-color: var(--color-peach);
+  color: var(--color-white);
+}
+
+.button:hover {
+  border-color: var(--color-peach);
+  color: var(--color-peach);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buttonNotValid {
+  color: var(--color-black);
+  border-color: var(--color-black);
+  background-color: transparent;
+}
+
+.buttonNotValid:hover {
+  color: var(--color-black);
+  border-color: var(--color-black);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    width: 138rem;
+    height: 24rem;
+    font-size: var(--font-size-body-middle);
+
+  }
+}

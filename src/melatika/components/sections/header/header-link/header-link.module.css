@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+  font-size: var(--font-size-body-big);
+  font-family: var(--font-basic);
+  color: var(--color-black);
+  line-height: 17rem;
+  font-weight: 600;
+}

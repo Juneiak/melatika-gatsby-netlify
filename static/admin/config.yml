@@ -13,6 +13,285 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+
+
+  - name: "melatika"
+    label: "Melatika"
+    files:
+      - file: "src/pages/melatika/index.md"
+        label: "Melatika"
+        name: "melatika"
+        fields:
+          - {
+            label: "Template Key",
+            name: "templateKey",
+            widget: "hidden",
+            default: "melatika-page",
+          }
+
+          - {
+            label: Вводная,
+            name: opening,
+            widget: object,
+            fields:
+            [
+              { label: Заголовок, name: title, widget: string },
+              { label: Подзаголовок, name: subtitle, widget: string },
+              { label: Картинка, name: image, widget: image },
+              { label: Картинка 480, name: image_480, widget: image },
+            ]
+          }
+
+          - {
+            label: Каталог,
+            name: catalog,
+            widget: object,
+            fields:
+            [
+              {
+                label: Каталог1,
+                name: catalog1,
+                widget: object,
+                fields: [
+                  { label: Текст, name: title, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                ]
+              },
+              {
+                label: Каталог2,
+                name: catalog2,
+                widget: object,
+                fields: [
+                  { label: Текст, name: title, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                ]
+              },
+              {
+                label: Каталог3,
+                name: catalog3,
+                widget: object,
+                fields: [
+                  { label: Текст, name: title, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                ]
+              },
+              {
+                label: Каталог4,
+                name: catalog4,
+                widget: object,
+                fields: [
+                  { label: Текст, name: title, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                ]
+              }
+
+            ]
+          }
+
+          - {
+            label: Призыв к действию,
+            name: weWillSelect,
+            widget: object,
+            fields:
+            [
+              { label: Заголовок, name: title, widget: string },
+              { label: Подзаголовок, name: subtitle, widget: string },
+              { label: Текст на кнопке, name: buttonText, widget: string },
+              { label: Подзаголовок 480, name: subtitle_480, widget: string },
+              { label: Текст на кнопке 480, name: buttonText_480, widget: string },
+              { label: Картинка, name: image, widget: image },
+              { label: Картинка 480, name: image_480, widget: image },
+            ]
+          }
+
+          - {
+            label: Статьи,
+            name: articles1,
+            widget: object,
+            fields:
+            [
+              {
+                label: Статья1,
+                name: article1,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Статья2,
+                name: article2,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Статья3,
+                name: article3,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Статья4,
+                name: article4,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+            ]
+          }
+
+          - {
+            label: О нас,
+            name: aboutUs,
+            widget: object,
+            fields:
+            [
+              { label: Заголовок, name: title, widget: string },
+              { label: Текст, name: text, widget: string },
+              { label: Ссылка на вк, name: vkUrl, widget: string },
+              { label: Картинка, name: image, widget: image },
+              { label: Картинка_480, name: image_480, widget: image },
+            ]
+          }
+
+          - {
+            label: Дизайнеры,
+            name: designers,
+            widget: object,
+            fields:
+            [
+              {
+                label: Призыв,
+                name: callToAction,
+                widget: object,
+                fields: [
+                  { label: Текст, name: text, widget: string },
+                  { label: Текст на кнопке, name: buttonText, widget: string },
+                ]
+              },
+              {
+                label: Дизайнер1,
+                name: designer1,
+                widget: object,
+                fields: [
+                  { label: Имя, name: name, widget: string },
+                  { label: Специализация, name: specialization, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Ссылка на ютуб, name: youtubeVideoHash, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Дизайнер2,
+                name: designer2,
+                widget: object,
+                fields: [
+                  { label: Имя, name: name, widget: string },
+                  { label: Специализация, name: specialization, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Ссылка на ютуб, name: youtubeVideoHash, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Дизайнер3,
+                name: designer3,
+                widget: object,
+                fields: [
+                  { label: Имя, name: name, widget: string },
+                  { label: Специализация, name: specialization, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Ссылка на ютуб, name: youtubeVideoHash, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+            ]
+          }
+
+          - {
+            label: Статьи,
+            name: articles2,
+            widget: object,
+            fields:
+            [
+              {
+                label: Статья1,
+                name: article1,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Статья2,
+                name: article2,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Статья3,
+                name: article3,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+              {
+                label: Статья4,
+                name: article4,
+                widget: object,
+                fields: [
+                  { label: Заголовок, name: title, widget: string },
+                  { label: Текст, name: text, widget: string },
+                  { label: Картинка, name: image, widget: image },
+                  { label: Картинка_480, name: image_480, widget: image },
+                ]
+              },
+            ]
+          }
+
+          - {
+            label: Модалки,
+            name: pupups,
+            widget: object,
+            fields:
+            [
+              { label: Картинка, name: clientPopupImage, widget: image },
+              { label: Картинка, name: designerPopupImage, widget: image },
+            ]
+          }
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"

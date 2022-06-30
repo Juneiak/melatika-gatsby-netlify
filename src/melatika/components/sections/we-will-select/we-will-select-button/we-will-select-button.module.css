@@ -1,0 +1,33 @@
+.button {
+  transition: all linear 0.25s;
+  width: 280rem;
+  height: 50rem;
+  border-radius: 35rem;
+  font-family: var(--font-basic);
+  font-weight: 500;
+  font-size: var(--font-size-caption-middle);
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease-out;
+  background-color: transparent;
+  color: black;
+  border: 1rem black solid;
+}
+
+.button:hover {
+  border-color: var(--color-peach);
+  color: var(--color-white);
+  background-color: var(--color-peach);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    width: 164rem;
+    height: 32rem;
+    font-size: var(--font-size-body-middle);
+    color: var(--color-white);
+    border: 1rem var(--color-white) solid;
+  }
+}

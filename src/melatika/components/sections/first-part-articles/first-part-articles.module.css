@@ -1,0 +1,145 @@
+.atricles {
+  width: 100%;
+  height: 720rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+
+.listElement1 {
+  grid-column: 2 span!important;
+}
+
+.articleCard1 {
+  grid-template-columns: 1fr 1fr!important;
+  grid-template-rows: 100%!important;
+  grid-template-areas: 
+  'image about'!important;
+  background-color: var(--color-gray);
+}
+
+.about1 {
+  color: var(--color-white);
+}
+
+.anim1 {
+
+}
+
+.articleCard1:hover .about1 {
+  transform: translateY(-10%)!important;
+}
+
+
+.listElement2 {
+
+}
+
+.articleCard2 {
+  grid-template-rows: 1fr 1fr!important;
+  grid-template-areas: 
+  'about'
+  'image'!important;
+}
+
+.about2 {
+
+}
+
+.anim2:hover > div {
+  transform: translateY(10%)!important;
+}
+
+
+.listElement3 {
+
+}
+
+.articleCard3 {
+
+}
+
+.anim3:hover > div {
+  transform: translateY(-10%)!important;
+}
+
+.about3 {
+}
+
+@media screen and (max-width: 480px) {
+  .atricles {
+    height: 687rem;
+  }
+
+  .list {
+    grid-template-columns: 100%!important;
+    grid-template-rows: repeat(4, 25%)!important;
+  }
+
+
+  .listElement1 {
+    grid-column: auto!important;
+  }
+  
+  .articleCard1 {
+    grid-template-columns: 40% 60%!important;
+  }
+  
+  .about1 {
+  }
+
+  .anim1:hover > div {
+    transform: translateY(-10%)!important;
+  }
+  
+  .listElement2 {
+  
+  }
+  
+  .articleCard2 {
+    grid-template-columns: 60% 40%!important;
+    grid-template-rows: 100%!important;
+    grid-template-areas: 
+    'about image'!important;
+  }
+
+  .anim2:hover > div {
+    transform: translateY(-10%)!important;
+  }
+  
+  .about2 {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+  }
+  
+  
+  .listElement3 {
+    grid-row: 2 span!important;
+  }
+  
+  .articleCard3 {
+    grid-template-rows: 50% 50%!important;
+  }
+
+  .anim3:hover > div {
+    transform: translateY(-10%)!important;
+  }
+  
+  .about3 {
+
+  }
+
+}

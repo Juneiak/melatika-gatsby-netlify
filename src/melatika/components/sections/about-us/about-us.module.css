@@ -1,0 +1,91 @@
+.aboutUs {
+  width: 100%;
+  height: 760rem;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.textContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40rem;
+  background-color: var(--color-gray);
+}
+
+.name {
+  font-family: var(--font-basic);
+  font-weight: 500;
+  font-size: var(--font-size-big);
+  margin-bottom: 11rem;
+  line-height: 48rem;
+  color: var(--color-white)
+}
+
+.vkLink img {
+  width: 22rem;
+  height: 22rem;
+}
+
+
+.nameContainer {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 15rem;
+}
+
+.text {
+  font-family: var(--font-basic);
+  font-weight: 500;
+  font-size: var(--font-size-caption-big);
+  line-height: 27rem;
+  color: var(--color-white)
+}
+
+.imageContainer {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    height: 560rem;
+  }
+  .content {
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .textContainer {
+    padding: 24rem;
+    background-color: var(--color-white);
+  }
+
+  .vkLink img {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 5rem;
+  }
+  
+
+  .name {
+    margin-bottom: 10rem;
+    line-height: 29rem;
+    color: var(--color-black);
+    font-size: var(--font-size-middle);
+
+  }
+
+  .text {
+    font-size: var(--font-size-body-middle);
+    line-height: 15rem;
+    color: var(--color-black);
+  }
+}
